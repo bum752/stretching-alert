@@ -9,9 +9,22 @@ GitHub Actions를 이용해 특정 시간에 슬랙으로 스트레칭을 권유
 
 #### 1. 프로젝트 복제
 
+<!--
 ![image](https://user-images.githubusercontent.com/20104232/78853916-09029c00-7a5b-11ea-9d24-8651a20c0bc3.png)
 
 화면 우측의 `Fork`를 클릭해 자신의 프로젝트로 복제해주세요.
+ -->
+
+~~Fork 를 사용하는 경우 Actions 실행이 아직 안되는 것 같습니다. ([Github Staff 댓글](https://github.community/t5/GitHub-Actions/How-to-run-and-enable-GitHub-actions-on-forked-repo-with-github/m-p/41676/highlight/true#M4706))~~
+
+Github에서 레포지토리를 생성 후 아래처럼 프로젝트를 클론해 자신의 레포지토리에 올립니다.
+
+```bash
+$ git clone https://github.com/bum752/stretching-alert.git
+$ cd stretching-alert
+$ git remote add my-repo https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}
+$ git push my-repo master
+```
 
 #### 2. Secrets 설정
 
